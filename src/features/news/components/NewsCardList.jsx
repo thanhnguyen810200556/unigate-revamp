@@ -28,4 +28,3 @@ function NewsCardList({ filteredNews }) {
 }
 
 export default NewsCardList;
-
