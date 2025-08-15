@@ -1,5 +1,14 @@
+import { Link } from "react-router-dom";
 import Button from "../../../shared/ui/Button";
-function NewsPageCard({ image, imageText, date, title, excerpt, category }) {
+function NewsPageCard({
+  image,
+  imageText,
+  date,
+  title,
+  excerpt,
+  category,
+  link,
+}) {
   return (
     <div className="flex flex-col gap-3 overflow-hidden rounded-lg border border-gray-200 px-6 py-6">
       <div className="h-50 relative w-full">
@@ -16,9 +25,11 @@ function NewsPageCard({ image, imageText, date, title, excerpt, category }) {
       <p>{excerpt}</p>
 
       <div className="mt-auto">
-        <Button className="bg-gradient-to-br from-blue-50 to-indigo-50 hover:-translate-y-1">
-          <span className="text-[#0056B3]">Xem chi tiết</span>
-        </Button>
+        <Link to={link}>
+          <Button className="bg-gradient-to-br from-blue-50 to-indigo-50 hover:-translate-y-1">
+            <span className="text-[#0056B3]">Xem chi tiết</span>
+          </Button>
+        </Link>
       </div>
     </div>
   );
