@@ -13,6 +13,7 @@ function NewsCardList({ filteredNews }) {
             category={items.category}
             title={items.title}
             excerpt={items.excerpt}
+            link={items.link}
           />
         ))
       ) : (
@@ -27,3 +28,4 @@ function NewsCardList({ filteredNews }) {
 }
 
 export default NewsCardList;
+
