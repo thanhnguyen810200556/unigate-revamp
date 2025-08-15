@@ -21,14 +21,30 @@ import {
   faGlobe,
   faArrowLeft,
   faBell,
+  faCircleCheck,
+  faBookOpen,
+  faLightbulb,
+  faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
   faUser,
   faEnvelope,
   faComment,
+  faPaperPlane,
+  faEye,
+  faEyeSlash,
 } from "@fortawesome/free-regular-svg-icons";
 
+import { BiLoaderAlt } from "react-icons/bi";
+
+import { Bot, Loader, User } from "lucide-react";
+
+export function SpinnerMini() {
+  return <BiLoaderAlt className="h-6 w-6 animate-spin text-gray-600" />;
+}
+
+// eslint-disable-next-line react-refresh/only-export-components
 export const iconMap = {
   user: faUser,
   envelope: faEnvelope,
@@ -55,4 +71,14 @@ export const iconMap = {
   globe: faGlobe,
   arrowLeft: faArrowLeft,
   bell: faBell,
+  circleCheck: faCircleCheck,
+  paperPlane: faPaperPlane,
+  bookOpen: faBookOpen,
+  lightbulb: faLightbulb,
+  bot: Bot,
+  loader: Loader,
+  userLucide: User,
+  eye: faEye,
+  eyeSlash: faEyeSlash,
+  arrowRight: faArrowRight,
 };
