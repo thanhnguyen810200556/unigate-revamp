@@ -58,7 +58,7 @@ export function useLoginForm() {
 
   useEffect(
     function () {
-      if (isAuthenticated) navigate("/dashboard/home", { replace: true });
+      if (isAuthenticated) navigate("/dashboard", { replace: true });
     },
     [isAuthenticated, navigate],
   );
@@ -78,3 +78,4 @@ export function useLoginForm() {
     handleShowPassword,
   };
 }
+
