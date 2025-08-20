@@ -1,59 +1,121 @@
-# VNUHCM-UNIGATE: Smart Admission Portal for VNU-HCM Competency Assessment Exam
+# 📌 VNUHCM-UNIGATE (Redesign & Refactor – Frontend Only)
 
-## Project Introduction
+Smart Admission Portal for VNU-HCM Competency Assessment Exam
 
-VNUHCM-UNIGATE is a smart admission portal developed to optimize the process of taking and applying with the results of the Competency Assessment Exam (CAE) of Vietnam National University, Ho Chi Minh City (VNU-HCM). The project is not only an admission management solution but also a learning support application, helping candidates prepare for the exam and orientate towards suitable majors.
+![React](https://img.shields.io/badge/Frontend-React-blue)  
+![Tailwind](https://img.shields.io/badge/Style-TailwindCSS-38B2AC)  
+![Gemini](https://img.shields.io/badge/AI-Google%20Gemini-ff9800)
 
-## Key Features
+---
 
-- **CAE Exam and Admission Management:**
-  - Allows candidates to register for the exam, register for admission, look up exam results and admission results.
-  - Provides an interface for member universities and VNU-HCM to manage and announce admission results.
-  - Applies a "virtual filtering" method to ensure candidates are admitted to only one nguyện vọng (their highest priority eligible nguyện vọng).
-- **Support for Candidates Preparing for the Exam:**
-  - Develop online mock tests based on the structure of the 2025 CAE sample test.
-  - Integrates a digital document database (ebooks) from the VNU Library to provide a rich source of study materials.
-- **Exam Result Analysis and Major Recommendation:**
-  - Provides detailed analysis of exam results (especially the highest score from 2 attempts) to identify strengths and weaknesses and offer advice for improvement.
-  - Builds a system to recommend suitable majors based on candidates' abilities and scores from the exam results.
-- **Learning Community:**
-  - A forum for candidates, alumni, and interested individuals to exchange and share experiences, study methods, and official information from universities.
-- **Artificial Intelligence Integration:**
-  - Chatbot supports answering simple questions about the admission process, hồ sơ, majors, etc., quickly and accurately.
-  - AI-based academic and career counseling system.
+## 🏛 Project Background
 
-## Technologies Used
+This project was originally developed by a team of 5 members — 2 front-end developers (including me) and 3 back-end developers.  
+At that time, both front-end members, including myself, were new to the field, so the initial frontend codebase lacked structure and best practices.
 
-- **Frontend:** ReactJS + REST API + Axios
-- **Backend:** FastAPI
-- **Version Control System:** Github
-- **Database:** PostgreSQL (relational data), NoSQL (posts, ebooks)
-- **Artificial Intelligence:** Chatbots, Major Recommendation System.
-- **Big Data Processing:** "Virtual filtering" algorithm, Major Recommendation System.
-- **Other Technologies:** Azure Database for PostgreSQL flexible server, Adobe Photoshop.
+The current version is my **personal redesign and refactor of the frontend**, created with permission from the original team.  
+Some layouts may still be inspired by the original design, but all frontend code has been rewritten for better maintainability, scalability, and performance.
 
-## Feasibility
+---
 
-The project utilizes modern, popular technologies with strong community support. The integration of AI (chatbot, major recommendation) has also proven feasible in many projects. Development and maintenance costs are assessed to be manageable with the use of open-source software and cloud computing services. The system is designed for horizontal scaling to handle high traffic during peak admission season, while also focusing on data security and backup. The layered architecture allows for easy expansion and integration of new features in the future.
+## 🚀 Introduction
 
-## Future Development Directions
+VNUHCM-UNIGATE is a smart admission portal that supports the registration, examination, and admission process for the VNU-HCM Competency Assessment Exam, along with providing preparation tools and study resources.
 
-- Optimize data processing performance and ensure stability, especially during peak season.
-- Improve user interface and user experience (UI/UX).
-- Develop an application to support admission applications to universities outside VNU-HCM that also use CAE results.
-- Integrate other admission methods (direct admission, priority admission...).
-- Enhance system security (data encryption, 2FA...).
-- Develop a mobile application version.
-- Integrate Machine Learning to predict admission trends.
+This **Redesign & Refactor Version** focuses on:
 
-## Development Team (Team: JAPANESE GOBLIN)
+- Modernizing the UI
+- Refactoring the frontend code into modular, maintainable components
+- Optimizing performance and improving UX
 
-- **Huỳnh Hoàng Hưng:** Team Leader, Fullstack, Report Writing.
-- **Nguyễn Hữu Lam Giang:** Database Administrator, Backend Lead, Fullstack.
-- **Nguyễn Khánh Vy:** Frontend, Poster Design.
-- **Trần Hải Đông:** Fullstack.
-- **Nguyễn Xuân Thanh:** Frontend, Poster Design.
+---
 
-## References
+## 🔥 Redesign & Refactor Highlights
 
-- Center for Testing and Quality Assessment of Training - Vietnam National University, Ho Chi Minh City, Project Proposal for the 2025 VNU-HCM Competency Assessment Exam, 2025
+- 🛠️ Rebuilt the frontend independently _(learned from the original team project)_
+- 🎨 Designed a **modern UI** on Figma → implemented with **React & TailwindCSS**
+- 🧩 Refactored into **modular components** with a cleaner folder structure
+- ⚡ Applied basic **performance improvements** (`useCallback`, reusable components)
+- 🧭 Enhanced **user experience** with clearer navigation and simpler layout
+- 🤖 Integrated **Google Gemini API** for chatbot & study recommendation demo
+
+---
+
+## 📸 Demo (current version)
+
+_(UI and features may change as the project is still in development)_
+
+### Screenshots
+
+![Homepage Screenshot](![alt text](image.png))  
+![Dashboard Screenshot](![alt text](image-1.png))
+
+### Video Walkthrough
+
+🎥 [Watch Demo Video](#) _(to be added)_
+
+---
+
+## 📋 Current Features
+
+### Public (Before Login)
+
+- Home page
+- News section
+- Contact page
+
+### Private (After Login) _(using **FakeAuthContext** with LocalStorage)_
+
+- Dashboard Home
+- Exam Test _(sample only, no real exam questions)_
+- Candidate Profile
+- AI Chatbot (Google Gemini API)
+- Competency Assessment Page:
+  - Exam registration
+  - Result retrieval
+  - **AI-based study major recommendation** (demo available with mock result date)
+
+---
+
+## 🛠️ Technologies Used
+
+- **Frontend**: ReactJS, TailwindCSS
+- **AI Integration**: Google Gemini API (Chatbot, AI-based recommendation)
+- **Design**: Figma
+
+> ℹ️ The original team project also included a FastAPI backend + PostgreSQL database,  
+> but this redesign focuses on the **frontend refactor + AI integration** only.
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+# Clone repository
+git clone https://github.com/thanhnguyen810200556/unigate-revamp.git
+cd unigate-revamp
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+```
+
+👉 Create a .env file with your Google Gemini API Key:
+
+VITE_GEMINI_API_KEY=your_api_key_here
+
+---
+
+## 👥 Development
+
+- Initial project: developed by a team of 5 (2 frontend, 3 backend).
+- Current version: frontend fully redesigned & refactored individually by **Nguyễn Xuân Thanh**.
+
+---
+
+## 🔗 Links to original
+
+- **Original Frontend Repository**: [VNUHCM-UNIGATE Frontend](https://github.com/KhanhVy-r2/VNUHCM-UNIGATE.git)
+- **Original Backend Repository**: [VNUHCM-UNIGATE Backend](https://github.com/Kamekain/VNUHCM-UNIGATE.git)
