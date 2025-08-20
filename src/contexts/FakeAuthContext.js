@@ -88,9 +88,7 @@ function AuthProvider({ children }) {
   }
 
   function logout() {
-    console.log("Logging out...");
     localStorage.removeItem("user");
-    console.log("LocalStorage after logout:", localStorage.getItem("user"));
     dispatch({ type: "logout" });
   }
 
@@ -110,3 +108,4 @@ function useAuth() {
 
 /* eslint-disable react-refresh/only-export-components */
 export { AuthProvider, useAuth };
+
