@@ -2,9 +2,7 @@
 
 Smart Admission Portal for VNU-HCM Competency Assessment Exam
 
-![React](https://img.shields.io/badge/Frontend-React-blue)  
-![Tailwind](https://img.shields.io/badge/Style-TailwindCSS-38B2AC)  
-![Gemini](https://img.shields.io/badge/AI-Google%20Gemini-ff9800)
+![React](https://img.shields.io/badge/Frontend-React-blue)  ![Tailwind](https://img.shields.io/badge/Style-TailwindCSS-38B2AC)  ![Gemini](https://img.shields.io/badge/AI-Google%20Gemini-ff9800)
 
 ---
 
