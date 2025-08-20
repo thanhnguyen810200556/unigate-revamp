@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useAuth } from "../../../contexts/FakeAuthContext";
 import { useNavigate } from "react-router-dom";
 import { HiArrowRightOnRectangle } from "react-icons/hi2";
-import { SpinnerMini } from "../../../shared/utilities/iconUtils";
+import { SpinnerMini } from "../../../shared/ui/SpinnerMini";
 
 function Logout() {
   const navigate = useNavigate();
