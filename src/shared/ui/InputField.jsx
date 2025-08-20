@@ -9,15 +9,17 @@ function InputField({
   icon,
   placeholder = "",
   className = "",
-  inputClassName = "border border-gray-300",
+  inputClassName = "border border-gray-300 bg-white p-3 text-gray-800",
   value,
   onChange,
   autoComplete,
   maxLength,
   pattern,
   inputMode = "text",
+  readOnly = false,
   error = "", // thông báo lỗi
   showError = false,
+  required = false,
 }) {
   const labelId = id || htmlFor;
 
@@ -42,6 +44,8 @@ function InputField({
           id={labelId}
           name={labelId}
           type={type}
+          readOnly={readOnly}
+          required={required}
           placeholder={placeholder}
           value={value}
           onChange={onChange}
@@ -49,7 +53,7 @@ function InputField({
           maxLength={maxLength}
           pattern={pattern}
           inputMode={inputMode}
-          className={`w-full rounded-lg bg-white p-3 text-gray-800 transition-colors focus:outline-none focus:ring-2 ${icon ? "pl-10" : ""} ${
+          className={`w-full rounded-lg transition-colors focus:outline-none focus:ring-2 ${icon ? "pl-10" : ""} ${
             showError && error
               ? "border-red-300 focus:border-red-500 focus:ring-red-200"
               : "border-gray-300 focus:border-blue-500 focus:ring-blue-200"

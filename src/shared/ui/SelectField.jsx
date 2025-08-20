@@ -7,6 +7,7 @@ function SelectField({
   inputClassName = "border border-gray-300",
   value,
   onChange,
+  disabled = false,
 }) {
   return (
     <div className={`relative ${className}`}>
@@ -31,7 +32,8 @@ function SelectField({
           name={htmlFor}
           value={value}
           onChange={onChange}
-          className={`w-full rounded-lg bg-white p-4 text-gray-800 ${icon ? "pl-10" : ""} ${inputClassName}`}
+          disabled={disabled}
+          className={`w-full rounded-lg bg-white p-3 text-gray-800 ${icon ? "pl-10" : ""} ${inputClassName}`}
         >
           {options.map((opt) => (
             <option key={opt.value} value={opt.value}>

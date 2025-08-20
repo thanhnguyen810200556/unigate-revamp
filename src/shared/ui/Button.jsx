@@ -19,6 +19,8 @@ function Button(props) {
       "text-[#0056B3] border border-[#0056B3] bg-white hover:bg-[#E6F0FF] focus:ring-[#0056B3]",
     ghost:
       "text-gray-600 hover:text-[#0056B3] hover:bg-gray-50 focus:ring-[#0056B3]",
+    gray: "text-black bg-gray-100 hover:bg-gray-100",
+    NA: "border border-gray-300 bg-white text-gray-700 hover:bg-gray-100",
     danger: "bg-red-600 text-white hover:bg-red-700 focus:ring-red-500",
     success: "bg-green-600 text-white hover:bg-green-700 focus:ring-green-500",
   };

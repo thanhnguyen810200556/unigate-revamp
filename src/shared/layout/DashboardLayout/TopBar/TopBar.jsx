@@ -7,9 +7,9 @@ function TopBar() {
     <div className="mb-4 mt-5 flex h-[3.25rem] flex-1 justify-between">
       <div className="ml-5">
         <InputField
-          placeholder="Search"
+          placeholder="Search..."
           className="w-96"
-          inputClassName="h-10 border border-[#0056B3]"
+          inputClassName="h-10 border px-3 border-[#0056B3]"
         />
       </div>
       <div className="flex items-center gap-2">

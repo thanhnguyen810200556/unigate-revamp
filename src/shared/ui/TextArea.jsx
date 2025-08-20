@@ -1,6 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function TextArea({ label, icon, placeholder, id, rows = 3 }) {
+function TextArea({
+  label,
+  icon,
+  placeholder,
+  id,
+  rows = 3,
+  required = false,
+}) {
   return (
     <div className="relative">
       <label
@@ -17,6 +24,7 @@ function TextArea({ label, icon, placeholder, id, rows = 3 }) {
           id={id}
           placeholder={placeholder}
           rows={rows}
+          required={required}
           className="w-full rounded-lg border border-gray-300 bg-white p-4 pl-10 text-gray-800"
         />
       </div>

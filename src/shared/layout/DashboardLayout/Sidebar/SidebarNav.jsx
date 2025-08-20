@@ -13,7 +13,7 @@ function getNavLinkClassName(isActive) {
 
 function SidebarNav() {
   return (
-    <nav>
+    <nav className="flex h-full flex-col justify-between">
       <ul className="ml-4 mt-5 flex w-full flex-col gap-3">
         {sidebarItems.map((item, index) => (
           <li key={index}>
