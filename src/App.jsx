@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+
 import HomepageLayout from "./shared/layout/HomepageLayout/HomepageLayout";
 import HomePage from "./features/home/pages/HomePage";
 import ContactPage from "./features/contact/pages/ContactPage";
@@ -8,43 +9,58 @@ import Dashboard from "./features/studentDashboard/Pages/Dashboard";
 import DashboardLayout from "./shared/layout/DashboardLayout/DashboardLayout";
 import ProfilePage from "./features/studentProfile/pages/ProfilePage";
 import ExamPage from "./features/exam/pages/ExamPage";
+import DocumentsPage from "./features/documents/pages/DocumentsPage";
 import AIChatPage from "./features/aiChat/pages/AIChatPage";
+import AdmissionPage from "./features/admission/pages/AdmissionPage";
+import ForumPage from "./features/forum/pages/ForumPage";
 import ExamTest from "./features/examTest/pages/examTest";
 import DetailsNewsPage from "./features/news/pages/DetailsNewsPage";
 import ProtectedRoute from "./shared/components/ProtectedRoute";
+import PageNotFound from "./features/notFound.jsx/PageNotFound";
+import Account from "./features/account/pages/Account";
+import ScrollToTop from "./shared/components/ScrollToTop";
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomepageLayout />}>
-        <Route index element={<HomePage />} />
-        <Route path="news" element={<NewsPage />} />
-        <Route path="news/:id" element={<DetailsNewsPage />} />
-        <Route path="contact" element={<ContactPage />} />
-        <Route path="login" element={<LoginPage />} />
-      </Route>
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<HomepageLayout />}>
+          <Route index element={<HomePage />} />
+          <Route path="news" element={<NewsPage />} />
+          <Route path="news/:id" element={<DetailsNewsPage />} />
+          <Route path="contact" element={<ContactPage />} />
+          <Route path="login" element={<LoginPage />} />
+        </Route>
 
-      <Route
-        path="/dashboard"
-        element={
-          <ProtectedRoute>
-            <DashboardLayout />
-          </ProtectedRoute>
-        }
-      >
-        <Route index element={<Dashboard />} />
-        <Route path="profile" element={<ProfilePage />} />
-        <Route path="exam" element={<ExamPage />} />
-        <Route path="ai-chat" element={<AIChatPage />} />
-      </Route>
-      <Route
-        path="/dashboard/exam-test"
-        element={
-          <ProtectedRoute>
-            <ExamTest />
-          </ProtectedRoute>
-        }
-      />
-    </Routes>
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <DashboardLayout />
+            </ProtectedRoute>
+          }
+        >
+          <Route path="home" element={<Dashboard />} />
+          <Route path="profile" element={<ProfilePage />} />
+          <Route path="exam" element={<ExamPage />} />
+          <Route path="ai-chat" element={<AIChatPage />} />
+          <Route path="account" element={<Account />} />
+
+          {/* <Route path="document" element={<DocumentsPage />} />
+          <Route path="admission" element={<AdmissionPage />} />
+          <Route path="forum" element={<ForumPage />} /> */}
+        </Route>
+        <Route
+          path="/dashboard/exam-test"
+          element={
+            <ProtectedRoute>
+              <ExamTest />
+            </ProtectedRoute>
+          }
+        />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+    </>
   );
 }
 
