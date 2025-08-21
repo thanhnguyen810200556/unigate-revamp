@@ -2,6 +2,7 @@ import { iconMap } from "../../../shared/utilities/iconUtils";
 import InputField from "../../../shared/ui/InputField";
 import TextArea from "../../../shared/ui/TextArea";
 import Button from "../../../shared/ui/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function ContactForm({ form, onForm, onFormSubmit }) {
   return (
@@ -24,6 +25,7 @@ function ContactForm({ form, onForm, onFormSubmit }) {
           placeholder="Nguyễn Văn A"
           value={form.fullName}
           onChange={onForm}
+          required={true}
         />
         <InputField
           id="email"
@@ -33,46 +35,36 @@ function ContactForm({ form, onForm, onFormSubmit }) {
           placeholder="example@gamil.com"
           value={form.email}
           onChange={onForm}
+          required={true}
         />
       </div>
 
       <InputField
-        id={3}
+        id="subject"
         htmlFor="subject"
         label="Chủ đề"
         icon={iconMap["comment"]}
         placeholder="Vui lòng nhập chủ đề"
         value={form.subject}
         onChange={onForm}
+        required={true}
       />
       <TextArea
-        id={4}
+        id="paragraph"
         label="Nội dung"
         rows={5}
         icon={iconMap["paragraph"]}
         placeholder="Nhập nội dung tin nhắn của bạn"
         value={form.text}
         onChange={onForm}
+        required={true}
       />
       <Button
         type="submit"
         className="gap-10 bg-gradient-to-r from-blue-600 to-indigo-700"
       >
-        <span className="flex items-center justify-center">
-          <svg
-            className="mr-2 h-6 w-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
-            ></path>
-          </svg>
+        <span className="flex items-center justify-center gap-2">
+          <FontAwesomeIcon icon={iconMap.paperPlane} />
           Gửi tin nhắn
         </span>
       </Button>

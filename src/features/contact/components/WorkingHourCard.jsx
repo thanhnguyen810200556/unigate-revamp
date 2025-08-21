@@ -1,6 +1,6 @@
 export function WorkingHours() {
   return (
-    <div className="ml-4 flex h-[124px] w-[322.513px] flex-col justify-center rounded-xl bg-gradient-to-r from-blue-600 to-indigo-700 p-6 text-white shadow-lg">
+    <div className="ml-4 flex h-[124px] w-[322.513px] flex-col justify-center rounded-xl bg-gradient-to-r from-blue-600 to-indigo-700 p-6 text-white shadow-lg transition hover:-translate-y-2">
       <h3 className="mb-4 flex items-center text-xl font-semibold">
         <svg
           className="mr-2 h-5 w-5"
