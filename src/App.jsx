@@ -9,10 +9,7 @@ import Dashboard from "./features/studentDashboard/Pages/Dashboard";
 import DashboardLayout from "./shared/layout/DashboardLayout/DashboardLayout";
 import ProfilePage from "./features/studentProfile/pages/ProfilePage";
 import ExamPage from "./features/exam/pages/ExamPage";
-import DocumentsPage from "./features/documents/pages/DocumentsPage";
 import AIChatPage from "./features/aiChat/pages/AIChatPage";
-import AdmissionPage from "./features/admission/pages/AdmissionPage";
-import ForumPage from "./features/forum/pages/ForumPage";
 import ExamTest from "./features/examTest/pages/examTest";
 import DetailsNewsPage from "./features/news/pages/DetailsNewsPage";
 import ProtectedRoute from "./shared/components/ProtectedRoute";
@@ -45,10 +42,6 @@ function App() {
           <Route path="exam" element={<ExamPage />} />
           <Route path="ai-chat" element={<AIChatPage />} />
           <Route path="account" element={<Account />} />
-
-          {/* <Route path="document" element={<DocumentsPage />} />
-          <Route path="admission" element={<AdmissionPage />} />
-          <Route path="forum" element={<ForumPage />} /> */}
         </Route>
         <Route
           path="/dashboard/exam-test"
