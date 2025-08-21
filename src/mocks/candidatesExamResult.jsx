@@ -1,0 +1,28 @@
+export const candidatesExamResult = [
+  {
+    id: "012345678901",
+    cccd: "012345678901",
+    fullName: "Nguyen Van A",
+    haveRegisteredExam: true,
+    haveExamResult: true,
+    total: 1064,
+    vietnamese: 264,
+    english: 276,
+    math: 255,
+    logic: 108,
+    science: 161,
+  },
+  {
+    id: "012345678902",
+    cccd: "012345678902",
+    fullName: "Tran Thi B",
+    haveRegisteredExam: true,
+    haveExamResult: true,
+    total: 1056,
+    vietnamese: 227,
+    english: 288,
+    math: 287,
+    logic: 103,
+    science: 151,
+  },
+];
