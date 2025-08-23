@@ -45,8 +45,8 @@ _(UI and features may change as the project is still in development)_
 
 ### Screenshots
 
-![Homepage Screenshot](<img width="1896" height="904" alt="image" src="https://github.com/user-attachments/assets/50e0773b-1d33-460a-8e16-9f0f77b10efa" />)
-![Dashboard Screenshot](<img width="1919" height="903" alt="image" src="https://github.com/user-attachments/assets/d082d803-8f91-435c-a95d-4d6be881051b" />)
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/a12e5c61-5eb0-4e24-98e8-f146de6f169a" />
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/3898a980-9a71-4d66-a387-9f1f97a155f8" />
 
 ### Video Walkthrough
 
