@@ -5,7 +5,7 @@ import { iconMap } from "../../../shared/utilities/iconUtils";
 
 function ChatInput({ onSubmit, isLoading, setInput, input, inputFocus }) {
   return (
-    <form className="flex justify-start gap-4 rounded-b-xl bg-white p-8">
+    <form className="flex justify-start gap-4 rounded-b-xl bg-white p-4">
       <InputField
         htmlFor="AIchat"
         placeholder="Ask something..."
