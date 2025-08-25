@@ -35,7 +35,7 @@ This **Redesign & Refactor Version** focuses on:
 - 🧩 Refactored into **modular components** with a cleaner folder structure
 - ⚡ Applied basic **performance improvements** (`useCallback`, reusable components)
 - 🧭 Enhanced **user experience** with clearer navigation and simpler layout
-- 🤖 Integrated **Google Gemini API** for chatbot & study recommendation demo
+- 🤖 Integrated **Google Gemini API** for chatbot & study recommendation 
 
 ---
 
